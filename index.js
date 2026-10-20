@@ -11,8 +11,8 @@ app.use(express.urlencoded({ extended: true }));
 const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
-  database: 'mahasiswa',
-  password: 'password_anda', // <-- GANTI dengan password PostgreSQL Anda
+  database: 'Mahasiswa',
+  password: 'Tnggl_25062006', // <-- GANTI dengan password PostgreSQL Anda
   port: 5432,
 });
 
