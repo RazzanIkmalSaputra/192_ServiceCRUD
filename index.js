@@ -7,3 +7,11 @@ const { Pool } = pg;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+const pool = new Pool({
+  user: 'postgres',
+  host: 'localhost',
+  database: 'mahasiswa',
+  password: 'password_anda', // <-- GANTI dengan password PostgreSQL Anda
+  port: 5432,
+});
