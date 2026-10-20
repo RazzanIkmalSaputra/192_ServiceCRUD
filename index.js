@@ -27,3 +27,6 @@ app.get('/', (req, res) => {
       res.status(500).send('Internal Server Error');
     });
 });
+
+app.post('/biodata', (req, res) => {
+  const { id, nama, nim, kelas } = req.body;
